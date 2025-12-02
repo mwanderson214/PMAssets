@@ -6,8 +6,9 @@ Your PropWise application has been successfully extracted into a standalone webs
 
 ```
 PMAssets/
-├── index.html                    # Main HTML entry point with CDN links
-├── propwise.jsx                  # Your React component (needs code added)
+├── index.html                    # Main HTML entry point
+├── propwise.js                   # React application (ES module)
+├── styles.css                    # Custom CSS styles
 ├── server.py                     # Python HTTP server
 ├── serve.sh                      # Quick start script
 ├── README.md                     # Full documentation
@@ -17,15 +18,15 @@ PMAssets/
 
 ## 🚀 Quick Start Guide
 
-### Step 1: Complete the propwise.jsx File
+### Step 1: Complete the propwise.js File
 
-The `propwise.jsx` file has the correct structure with:
+The `propwise.js` file has the correct structure with:
 - ✅ Import statements for React, Recharts, and Lucide icons
 - ✅ Mounting logic at the end
 - ⚠️  **Needs your PropWise component code in the middle**
 
 **Action Required:**
-1. Open `propwise.jsx`
+1. Open `propwise.js`
 2. Find the comment: `// NOTE: Insert the rest of your PropWise component code here`
 3. Replace that section with ALL your component code from lines 6 through the end of the App component from your original file
 
@@ -58,15 +59,21 @@ Navigate to: **http://localhost:8000**
 - ES module imports from CDN (esm.sh)
 - Tailwind CSS for styling
 - Import map for React, Recharts, and Lucide icons
-- Loading spinner
-- Mounts the propwise.jsx module
+- Links to styles.css
+- Loads propwise.js module
 
-### propwise.jsx  
+### propwise.js
 - Proper ES module structure
 - React 18 with hooks
 - Recharts for data visualization
 - Lucide React for icons
 - Ready for your component code
+
+### styles.css
+- CSS reset and base styles
+- Custom scrollbar styling
+- Loading spinner animation
+- Utility classes
 
 ### server.py
 - Simple Python HTTP server
@@ -91,6 +98,7 @@ Navigate to: **http://localhost:8000**
 - ✅ No build process required
 - ✅ Works with any simple HTTP server
 - ✅ ES modules for clean imports
+- ✅ Separate HTML, JS, and CSS files
 - ✅ Local storage for data persistence
 - ✅ Fully client-side (no backend needed)
 
@@ -106,10 +114,17 @@ Just let me know if you want this version instead!
 
 ## ⚡ Next Steps
 
-1. Insert your PropWise component code into `propwise.jsx`
+1. Insert your PropWise component code into `propwise.js`
 2. Run `./serve.sh`
 3. Open http://localhost:8000
 4. Test the application with demo accounts
+
+## 📂 File Organization
+
+The application is now cleanly separated into:
+- **index.html** - HTML structure, script loading, importmap configuration
+- **propwise.js** - All React/JavaScript application code
+- **styles.css** - All custom CSS styling (resets, animations, utilities)
 
 ## 🆘 Need Help?
 

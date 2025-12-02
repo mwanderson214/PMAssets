@@ -6,8 +6,9 @@ Your standalone website structure is ready! Here's what's been created:
 
 FILES CREATED:
 --------------
-✅ index.html          - Main HTML file with ES module support
-✅ propwise.jsx        - React component file (needs your code added)
+✅ index.html          - Main HTML entry point
+✅ propwise.js         - React application (ES module)
+✅ styles.css          - Custom CSS styles
 ✅ server.py           - Python HTTP server
 ✅ serve.sh            - Quick start script
 ✅ README.md           - Complete documentation
@@ -17,8 +18,8 @@ NEXT STEPS:
 -----------
 
 1. COPY YOUR COMPLETE PROPWISE CODE:
-   
-   Open propwise.jsx and replace the NOTE section (line 45-48) with ALL your 
+
+   Open propwise.js and replace the NOTE section (line 45-48) with ALL your
    component code from the original file. This includes:
    - All the mock data generators (defaultOwners, defaultProperties, etc.)
    - All utility functions (formatCurrency, formatDate, etc.)
@@ -27,6 +28,11 @@ NEXT STEPS:
    - The main App component
 
    Keep the imports at the top and the mount logic at the bottom unchanged.
+
+   FILE STRUCTURE:
+   - index.html  → HTML structure, CDN imports, importmap
+   - propwise.js → All React/JavaScript application code
+   - styles.css  → All custom CSS (resets, scrollbar, spinner)
 
 2. START THE SERVER:
    

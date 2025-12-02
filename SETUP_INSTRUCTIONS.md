@@ -4,16 +4,18 @@
 
 The standalone website structure has been created with:
 - ✅ `index.html` - HTML entry point with ES module support
+- ✅ `propwise.js` - React application (ES module)
+- ✅ `styles.css` - Custom CSS styles
 - ✅ `server.py` - Python HTTP server
-- ✅ `serve.sh` - Quick start script  
+- ✅ `serve.sh` - Quick start script
 - ✅ `README.md` - Documentation
-- ⚠️  `propwise.jsx` - Needs your complete component code
+- ⚠️  `propwise.js` - Needs your complete component code
 
 ## Complete the Setup
 
 ### Step 1: Add Your PropWise Component Code
 
-Open `propwise.jsx` and insert ALL your component code between the imports and the mount logic.
+Open `propwise.js` and insert ALL your component code between the imports and the mount logic.
 
 The file should look like this:
 
@@ -32,6 +34,11 @@ import { Building2, Users, ... } from 'lucide-react';
 const root = createRoot(document.getElementById('root'));
 root.render(React.createElement(App));
 ```
+
+**Note:** The application is now organized into separate files:
+- `index.html` - HTML structure and script loading
+- `propwise.js` - All React/JavaScript code
+- `styles.css` - All custom CSS styling
 
 ### Step 2: Run the Server
 
