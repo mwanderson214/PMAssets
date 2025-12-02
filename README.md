@@ -6,8 +6,9 @@ This is a standalone commercial property management application built with React
 
 ```
 PMAssets/
-├── index.html          - Main HTML file
-├── propwise.jsx        - React application code  
+├── index.html          - Main HTML entry point
+├── propwise.js         - React application code (ES module)
+├── styles.css          - Custom CSS styles
 ├── server.py           - Simple HTTP server (Python)
 ├── serve.sh            - Quick server start script
 └── README.md           - This file
@@ -71,8 +72,17 @@ php -S localhost:8000
 - **React 18** - UI framework
 - **Recharts** - Data visualization
 - **Lucide React** - Icons
-- **Tailwind CSS** - Styling
+- **Tailwind CSS** - Utility-first styling framework
+- **Custom CSS** - Additional styles in styles.css
 - **Local Storage** - Data persistence
+
+### File Organization
+
+- **index.html** - HTML structure, CDN imports, and importmap configuration
+- **propwise.js** - Complete React application as ES module
+- **styles.css** - Custom CSS (resets, scrollbar styling, loading spinner)
+- **server.py** - Development HTTP server with CORS support
+- **serve.sh** - Cross-platform server launcher script
 
 ## Notes
 
