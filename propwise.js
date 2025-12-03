@@ -1,6 +1,12 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import { createRoot } from 'react-dom/client';
-import { LineChart, Line, BarChart, Bar, ComposedChart, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
+// Use React and ReactDOM from global scope (loaded via CDN)
+const React = window.React;
+const { useState, useEffect, useMemo } = React;
+const { createRoot } = window.ReactDOM;
+
+// Use Recharts from global scope (loaded via CDN)
+const { LineChart, Line, BarChart, Bar, ComposedChart, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } = window.Recharts;
+
+// Import lucide-react icons (via import map)
 import { Building2, Users, FileText, DollarSign, TrendingUp, Plus, Search, ChevronRight, Home, Settings, LogOut, Eye, EyeOff, Calendar, MapPin, Phone, Mail, Edit2, Trash2, X, Check, AlertCircle, Building, Wallet, Receipt, ArrowUpRight, ArrowDownRight, Filter, MoreVertical, User, Key, Loader2 } from 'lucide-react';
 
 // ============================================
@@ -4653,4 +4659,4 @@ export default function App() {
 // MOUNT THE APPLICATION
 // ============================================
 const root = createRoot(document.getElementById('root'));
-root.render(React.createElement(App));
+root.render(<App />);
