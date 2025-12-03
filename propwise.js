@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
+import { createRoot } from 'react-dom/client';
 import { LineChart, Line, BarChart, Bar, ComposedChart, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 import { Building2, Users, FileText, DollarSign, TrendingUp, Plus, Search, ChevronRight, Home, Settings, LogOut, Eye, EyeOff, Calendar, MapPin, Phone, Mail, Edit2, Trash2, X, Check, AlertCircle, Building, Wallet, Receipt, ArrowUpRight, ArrowDownRight, Filter, MoreVertical, User, Key, Loader2 } from 'lucide-react';
 
@@ -4647,3 +4648,9 @@ export default function App() {
     </div>
   );
 }
+
+// ============================================
+// MOUNT THE APPLICATION
+// ============================================
+const root = createRoot(document.getElementById('root'));
+root.render(React.createElement(App));

@@ -11,6 +11,9 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
 
+    <!-- Babel Standalone for JSX transformation -->
+    <script src="https://unpkg.com/@babel/standalone@7.23.5/babel.min.js"></script>
+
     <!-- Import Map for ES Modules -->
     <script type="importmap">
     {
@@ -31,7 +34,7 @@
         </div>
     </div>
 
-    <!-- Load the application -->
-    <script type="module" src="./propwise.js"></script>
+    <!-- Load the application with JSX transformation -->
+    <script type="text/babel" data-type="module" src="./propwise.js"></script>
 </body>
 </html>
